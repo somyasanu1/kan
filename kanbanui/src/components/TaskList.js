@@ -3,7 +3,7 @@ import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 import React from 'react';
 
 const deleteTask = async ( index) =>{
-  let res = await fetch(`https://sanukanbanbackend.herokuapp.com/api/task/del/${index}`,
+  let res = await fetch(`https://localhost:8000/api/task/del/${index}`,
   {
     method: 'DELETE',})
 }
